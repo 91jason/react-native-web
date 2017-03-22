@@ -15,7 +15,7 @@ class PixelRatio {
   /**
    * Returns the device pixel density.
    */
-  static get(): number {
+  static getScale(): number {
     return Dimensions.get('window').scale
   }
 

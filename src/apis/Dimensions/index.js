@@ -38,6 +38,8 @@ class Dimensions {
 }
 
 Dimensions.set()
+//# Polyfill
+global.addEventListener = global.addEventListener || function (e, f) { window.attachEvent('on' + e, f); };
 ExecutionEnvironment.canUseDOM && window.addEventListener('resize', debounce(Dimensions.set, 50))
 
 module.exports = Dimensions

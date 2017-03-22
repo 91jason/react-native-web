@@ -4,19 +4,20 @@ const listeners = {}
 const eventTypes = [ 'change' ]
 
 class AppState {
-  static get currentState() {
-    switch (document.visibilityState) {
-      case 'hidden':
-      case 'prerender':
-      case 'unloaded':
-        return 'background'
-      default:
-        return 'active'
-    }
-  }
 
   static addEventListener(type: string, handler: Function) {
-    listeners[handler] = () => handler(AppState.currentState)
+    listeners[handler] = () => {
+      var currentState = 'active';
+      switch (document.visibilityState) {
+        case 'hidden':
+        case 'prerender':
+        case 'unloaded':
+          currentState = 'background';
+        default:
+          currentState = 'active';
+      }
+      return handler(currentState);
+    }
     invariant(eventTypes.indexOf(type) !== -1, 'Trying to subscribe to unknown event: "%s"', type)
     document.addEventListener('visibilitychange', listeners[handler], false)
   }
