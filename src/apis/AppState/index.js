@@ -15,7 +15,7 @@ const listeners = [];
 class AppState {
   static isAvailable = ExecutionEnvironment.canUseDOM && document.visibilityState;
 
-  static get currentState() {
+  static currentState() {
     if (!AppState.isAvailable) {
       return AppState.ACTIVE;
     }
