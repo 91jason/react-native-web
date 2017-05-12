@@ -110,7 +110,8 @@ class StyleManager {
       this._addToCache(className, prop, value);
       if (canUseDOM) {
         requestAnimationFrame(() => {
-          const sheet = this.mainSheet.sheet;
+          if(!this.mainSheet || !this.mainSheet.sheet || !this.mainSheet.textContent) return;
+
           // avoid injecting if the rule already exists (e.g., server rendered, hot reload)
           if (this.mainSheet.textContent.indexOf(className) === -1) {
             const rule = createCssRule(className, prop, value);
