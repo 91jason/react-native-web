@@ -8,7 +8,7 @@
 
 import { Component } from 'react';
 import invariant from 'fbjs/lib/invariant';
-import { unmountComponentAtNode } from 'react-dom';
+import { unmountComponentAtNode } from 'react/lib/ReactDOM';
 import renderApplication, { getApplication } from './renderApplication';
 
 const emptyObject = {};

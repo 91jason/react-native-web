@@ -7,7 +7,7 @@
  */
 
 import invariant from 'fbjs/lib/invariant';
-import { render } from 'react-dom';
+import { render } from 'react/lib/ReactDOM';
 import ReactNativeApp from './ReactNativeApp';
 import StyleSheet from '../../apis/StyleSheet';
 import React, { Component } from 'react';

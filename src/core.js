@@ -1,5 +1,5 @@
 import findNodeHandle from './modules/findNodeHandle';
-import { render, unmountComponentAtNode } from 'react-dom';
+import { render, unmountComponentAtNode } from 'react/lib/ReactDOM';
 
 // APIs
 import I18nManager from './apis/I18nManager';
