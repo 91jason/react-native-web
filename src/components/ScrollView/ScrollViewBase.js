@@ -15,28 +15,16 @@ import { bool, func, number } from 'prop-types';
 const normalizeScrollEvent = e => ({
   nativeEvent: {
     contentOffset: {
-      get x() {
-        return e.target.scrollLeft;
-      },
-      get y() {
-        return e.target.scrollTop;
-      }
+      x:e.target.scrollLeft,
+      y:e.target.scrollTop,
     },
     contentSize: {
-      get height() {
-        return e.target.scrollHeight;
-      },
-      get width() {
-        return e.target.scrollWidth;
-      }
+      height:e.target.scrollHeight,
+      width:e.target.scrollWidth,
     },
     layoutMeasurement: {
-      get height() {
-        return e.target.offsetHeight;
-      },
-      get width() {
-        return e.target.offsetWidth;
-      }
+      height:e.target.offsetHeight,
+      width:e.target.offsetWidth,
     }
   },
   timeStamp: Date.now()

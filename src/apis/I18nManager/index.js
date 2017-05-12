@@ -37,9 +37,7 @@ const I18nManager: I18nManagerStatus = {
     isPreferredLanguageRTL = bool;
     onChange();
   },
-  get isRTL() {
-    return isRTL();
-  }
+  isRTL:isRTL(),
 };
 
 module.exports = I18nManager;
