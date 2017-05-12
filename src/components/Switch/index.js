@@ -6,7 +6,8 @@ import StyleSheet from '../../apis/StyleSheet';
 import UIManager from '../../apis/UIManager';
 import View from '../View';
 import ViewPropTypes from '../View/ViewPropTypes';
-import React, { PureComponent } from 'react';
+import React from 'react';
+import PureComponent from 'react-pure-render/component';
 import { bool, func } from 'prop-types';
 
 const emptyObject = {};
