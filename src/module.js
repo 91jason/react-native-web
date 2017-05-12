@@ -1,50 +1,103 @@
-export { default as createDOMElement } from './modules/createDOMElement';
-export { default as findNodeHandle } from './modules/findNodeHandle';
-export { default as NativeModules } from './modules/NativeModules';
-export { default as processColor } from './modules/processColor';
-export { render, unmountComponentAtNode } from 'react/lib/ReactDOM';
+import  createDOMElement  from './modules/createDOMElement';
+import  findNodeHandle  from './modules/findNodeHandle';
+import  NativeModules  from './modules/NativeModules';
+import  processColor  from './modules/processColor';
+import { render, unmountComponentAtNode } from 'react/lib/ReactDOM';
+
+export {
+  createDOMElement,
+  findNodeHandle,
+  NativeModules,
+  processColor,
+  render,
+  unmountComponentAtNode
+}
 
 // APIs
-export { default as Animated } from './apis/Animated';
-export { default as AppRegistry } from './apis/AppRegistry';
-export { default as AppState } from './apis/AppState';
-export { default as AsyncStorage } from './apis/AsyncStorage';
-export { default as BackAndroid } from './apis/BackAndroid';
-export { default as Clipboard } from './apis/Clipboard';
-export { default as Dimensions } from './apis/Dimensions';
-export { default as Easing } from 'animated/lib/Easing';
-export { default as I18nManager } from './apis/I18nManager';
-export { default as InteractionManager } from './apis/InteractionManager';
-export { default as Linking } from './apis/Linking';
-export { default as NetInfo } from './apis/NetInfo';
-export { default as PanResponder } from './apis/PanResponder';
-export { default as PixelRatio } from './apis/PixelRatio';
-export { default as Platform } from './apis/Platform';
-export { default as StyleSheet } from './apis/StyleSheet';
-export { default as UIManager } from './apis/UIManager';
-export { default as Vibration } from './apis/Vibration';
+import  Animated  from './apis/Animated';
+import  AppRegistry  from './apis/AppRegistry';
+import  AppState  from './apis/AppState';
+import  AsyncStorage  from './apis/AsyncStorage';
+import  BackAndroid  from './apis/BackAndroid';
+import  Clipboard  from './apis/Clipboard';
+import  Dimensions  from './apis/Dimensions';
+import  Easing  from 'animated/lib/Easing';
+import  I18nManager  from './apis/I18nManager';
+import  InteractionManager  from './apis/InteractionManager';
+import  Linking  from './apis/Linking';
+import  NetInfo  from './apis/NetInfo';
+import  PanResponder  from './apis/PanResponder';
+import  PixelRatio  from './apis/PixelRatio';
+import  Platform  from './apis/Platform';
+import  StyleSheet  from './apis/StyleSheet';
+import  UIManager  from './apis/UIManager';
+import  Vibration  from './apis/Vibration';
+
+export {
+  Animated,
+  AppRegistry,
+  AppState,
+  AsyncStorage,
+  BackAndroid,
+  Clipboard,
+  Dimensions,
+  Easing,
+  I18nManager,
+  InteractionManager,
+  Linking,
+  NetInfo,
+  PanResponder,
+  PixelRatio,
+  Platform,
+  StyleSheet,
+  UIManager,
+  Vibration,
+}
 
 // components
-export { default as ActivityIndicator } from './components/ActivityIndicator';
-export { default as Button } from './components/Button';
-export { default as Image } from './components/Image';
-export { default as ListView } from './components/ListView';
-export { default as ProgressBar } from './components/ProgressBar';
-export { default as ScrollView } from './components/ScrollView';
-export { default as StatusBar } from './components/StatusBar';
-export { default as Switch } from './components/Switch';
-export { default as Text } from './components/Text';
-export { default as TextInput } from './components/TextInput';
-export { default as Touchable } from './components/Touchable/Touchable';
-export { default as TouchableHighlight } from './components/Touchable/TouchableHighlight';
-export { default as TouchableOpacity } from './components/Touchable/TouchableOpacity';
+import  ActivityIndicator  from './components/ActivityIndicator';
+import  Button  from './components/Button';
+import  Image  from './components/Image';
+import  ListView  from './components/ListView';
+import  ProgressBar  from './components/ProgressBar';
+import  ScrollView  from './components/ScrollView';
+import  StatusBar  from './components/StatusBar';
+import  Switch  from './components/Switch';
+import  Text  from './components/Text';
+import  TextInput  from './components/TextInput';
+import  Touchable  from './components/Touchable/Touchable';
+import  TouchableHighlight  from './components/Touchable/TouchableHighlight';
+import  TouchableOpacity  from './components/Touchable/TouchableOpacity';
+import TouchableWithoutFeedback from './components/Touchable/TouchableWithoutFeedback';
+import  View  from './components/View';
+
 export {
-  default as TouchableWithoutFeedback
-} from './components/Touchable/TouchableWithoutFeedback';
-export { default as View } from './components/View';
+  ActivityIndicator,
+  Button,
+  Image,
+  ListView,
+  ProgressBar,
+  ScrollView,
+  StatusBar,
+  Switch,
+  Text,
+  TextInput,
+  Touchable,
+  TouchableHighlight,
+  TouchableOpacity,
+  TouchableWithoutFeedback,
+  View,
+}
 
 // propTypes
-export { default as ColorPropType } from './propTypes/ColorPropType';
-export { default as EdgeInsetsPropType } from './propTypes/EdgeInsetsPropType';
-export { default as PointPropType } from './propTypes/PointPropType';
-export { default as ViewPropTypes } from './components/View/ViewPropTypes';
+import  ColorPropType  from './propTypes/ColorPropType';
+import  EdgeInsetsPropType  from './propTypes/EdgeInsetsPropType';
+import  PointPropType  from './propTypes/PointPropType';
+import  ViewPropTypes  from './components/View/ViewPropTypes';
+
+export {
+  ColorPropType,
+  EdgeInsetsPropType,
+  PointPropType,
+  ViewPropTypes,
+}
