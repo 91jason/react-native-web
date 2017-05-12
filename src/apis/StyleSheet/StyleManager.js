@@ -67,7 +67,7 @@ class StyleManager {
       if (prerenderedStyleSheet) {
         this.mainSheet = prerenderedStyleSheet;
       } else {
-        document.head.insertAdjacentHTML('afterbegin', this.getStyleSheetHtml());
+        // document.head.insertAdjacentHTML('afterbegin', this.getStyleSheetHtml());
         this.mainSheet = document.getElementById(STYLE_ELEMENT_ID);
       }
     }

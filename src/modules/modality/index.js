@@ -64,7 +64,7 @@ const modality = () => {
     if (!styleElement) {
       // removes focus styles by default
       const style = `<style id="${id}">:focus { outline: none; }</style>`;
-      document.head.insertAdjacentHTML('afterbegin', style);
+      // document.head.insertAdjacentHTML('afterbegin', style);
       styleElement = document.getElementById(id);
     }
   };
