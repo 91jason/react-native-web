@@ -1,9 +1,9 @@
 // based on https://github.com/facebook/react/pull/4303/files
 
-import EventPluginHub from 'react-dom/lib/EventPluginHub';
+import EventPluginHub from 'react/lib/EventPluginHub';
 import normalizeNativeEvent from './normalizeNativeEvent';
-import ResponderEventPlugin from 'react-dom/lib/ResponderEventPlugin';
-import ResponderTouchHistoryStore from 'react-dom/lib/ResponderTouchHistoryStore';
+import ResponderEventPlugin from 'react/lib/ResponderEventPlugin';
+import ResponderTouchHistoryStore from 'react/lib/ResponderTouchHistoryStore';
 
 const topMouseDown = 'topMouseDown';
 const topMouseMove = 'topMouseMove';
